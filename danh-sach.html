@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../chung/chung.css">
+    <link rel="stylesheet" href="danh-sach.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <header class="dau-trang">
+    <!-- LOGO -->
+    <a class="logo" href="../trang-chu/trang-chu.html">
+        Pass<span>It</span>
+    </a>
+    <nav class="menu">
+        <a href="../trang-chu/trang-chu.html" >
+            Trang chủ
+        </a>
+
+        <a href="../danh-sach/danh-sach.html" class="muc-dang-chon">
+            Khám phá
+        </a>
+
+        <a href="../dang-do/dang-do.html">
+            Đăng đồ
+        </a>
+    </nav>
+
+    <!-- TAI KHOAN BEN PHAI -->
+     <div class="menu-tai-khoan">
+
+    <button class="nut-tai-khoan" type="button">
+        <span>Tài khoản</span>
+        <span class="mui-ten">▽</span>
+    </button>
+
+    <!-- MENU THA XUONG -->
+    <div class="menu-tha-xuong">
+
+        <div class="thong-tin-menu">
+            <div class="avatar-menu">♙</div>
+
+            <div class="chu-thong-tin">
+                <p class="tieu-de-menu">Tài khoản của tôi</p>
+                <span id="tenTrenMenu">Thành viên PassIt</span>
+            </div>
+        </div>
+
+        <div class="duong-ke-menu"></div>
+
+        <a href="../thong-tin-ca-nhan/thong-tin.html" id="lienKetThongTin">
+            Thông tin cá nhân
+        </a>
+
+        <a href="../san-pham-yeu-thich/yeu-thich.html" id="lienKetYeuThich">
+            Sản phẩm yêu thích
+        </a>
+
+        <div class="duong-ke-menu"></div>
+
+        <button
+            type="button"
+            class="nut-dang-xuat"
+            id="nutDangXuat">
+            ↪ Đăng xuất
+        </button>
+
+    </div>
+
+</header>
+
+    <main class="container">
+
+        <!-- TITLE -->
+        <section class="page-heading">
+            <p class="eyebrow">PASSIT MARKETPLACE</p>
+            <h1>Khám phá đồ cũ</h1>
+            <p>Tìm món đồ phù hợp và trao cho những món đồ cũ một vòng đời mới.</p>
+        </section>
+
+        <!-- SEARCH -->
+        <section class="search-section">
+            <form id="formTimKiem" class="search-form">
+                <span class="search-icon">⌕</span>
+                <input
+                    type="search"
+                    id="tuKhoa"
+                    placeholder="Bạn đang tìm món đồ nào?"
+                    aria-label="Tìm kiếm sản phẩm"
+                >
+                <button type="submit" class="search-button">Tìm kiếm</button>
+            </form>
+        </section>
+
+        <!-- FILTERS -->
+        <section class="filter-section">
+            <div class="filter-heading">
+                <h2>Tất cả sản phẩm</h2>
+                <button type="button" id="nutXoaBoLoc" class="clear-button">
+                    Xóa bộ lọc
+                </button>
+            </div>
+
+            <div class="filter-controls">
+                <label class="filter-item">
+                    <span>Danh mục</span>
+                    <select id="locDanhMuc">
+                        <option value="">Tất cả danh mục</option>
+                        <option value="dien-thoai">Điện thoại</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="may-tinh-bang">Máy tính bảng</option>
+                        <option value="quan-ao">Quần áo</option>
+                        <option value="giay-dep">Giày dép</option>
+                        <option value="tui-xach">Túi xách</option>
+                        <option value="sach">Sách</option>
+                        <option value="phu-kien">Phụ kiện</option>
+                        <option value="noi-that">Nội thất</option>
+                        <option value="gia-dung">Đồ gia dụng</option>
+                        <option value="lam-dep">Làm đẹp</option>
+                        <option value="the-thao">Thể thao</option>
+                        <option value="khac">Khác</option>
+                    </select>
+                </label>
+
+                <label class="filter-item">
+                    <span>Tình trạng</span>
+                    <select id="locTinhTrang">
+                        <option value="">Tất cả tình trạng</option>
+                        <option value="như mới">Như mới</option>
+                        <option value="tốt">Đã qua sử dụng - tốt</option>
+                        <option value="đã qua sử dụng">Đã qua sử dụng</option>
+                    </select>
+                </label>
+
+                <label class="filter-item">
+                    <span>Sắp xếp</span>
+                    <select id="sapXep">
+                        <option value="mac-dinh">Mặc định</option>
+                        <option value="gia-tang">Giá thấp đến cao</option>
+                        <option value="gia-giam">Giá cao đến thấp</option>
+                        <option value="moi-nhat">Mới đăng</option>
+                    </select>
+                </label>
+            </div>
+
+            <p id="soLuongSanPham" class="product-count"></p>
+        </section>
+
+        <!-- PRODUCT LIST -->
+        <section class="products-section">
+            <div id="thongBaoSanPham" class="notice" hidden></div>
+
+            <div id="danhSachSanPham" class="product-grid">
+                <p class="empty-state">Đang tải sản phẩm...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <a href="../trang-chu/trang-chu.html" class="logo">
+                Pass<span>It</span>
+            </a>
+            <p>Trao đồ cũ · Nhận giá trị mới.</p>
+        </div>
+    </footer>
+
+    <script src="../chung/chung.js"></script>
+    <script src="danh-sach.js"></script>
+</body>
+</html>
