@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
     // 1. CẤU HÌNH

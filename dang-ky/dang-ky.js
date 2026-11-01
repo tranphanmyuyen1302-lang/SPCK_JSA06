@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const KHOA_NGUOI_DUNG = "danhSachNguoiDung";
 
