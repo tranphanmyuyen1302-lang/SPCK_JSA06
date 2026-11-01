@@ -436,3 +436,70 @@ input {
         justify-content: flex-end;
     }
 }
+
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+.back-to-top {
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #26734d;
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: 500;
+
+    cursor: pointer;
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+
+    box-shadow: 0 5px 18px rgba(38, 115, 77, 0.2);
+
+    transition: 
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+/* Khi cuộn xuống */
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Hover */
+.back-to-top:hover {
+    background: #194b32;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(38, 115, 77, 0.3);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .back-to-top {
+        right: 18px;
+        bottom: 20px;
+        width: 44px;
+        height: 44px;
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="dang-nhap.css">
     <link rel="stylesheet" href="../chung/chung.css">
 </head>
+
 <body>
     <header class="thanh-dieu-huong">
         <a href="../trang-chu/trang-chu.html" class="logo">
@@ -88,14 +90,8 @@
                         <div class="o-nhap">
                             <span class="icon-truong" aria-hidden="true">✉</span>
 
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="name@example.com"
-                                autocomplete="email"
-                                required
-                            >
+                            <input type="email" id="email" name="email" placeholder="name@example.com"
+                                autocomplete="email" required>
                         </div>
 
                         <small class="loi-truong" id="loiEmail"></small>
@@ -109,22 +105,11 @@
                         <div class="o-nhap">
                             <span class="icon-truong" aria-hidden="true">♙</span>
 
-                            <input
-                                type="password"
-                                id="matKhau"
-                                name="matKhau"
-                                placeholder="Nhập mật khẩu"
-                                autocomplete="current-password"
-                                required
-                            >
+                            <input type="password" id="matKhau" name="matKhau" placeholder="Nhập mật khẩu"
+                                autocomplete="current-password" required>
 
-                            <button
-                                type="button"
-                                id="nutHienMatKhau"
-                                class="nut-hien-mat-khau"
-                                aria-label="Hiện mật khẩu"
-                                aria-pressed="false"
-                            >
+                            <button type="button" id="nutHienMatKhau" class="nut-hien-mat-khau"
+                                aria-label="Hiện mật khẩu" aria-pressed="false">
                                 Hiện
                             </button>
                         </div>
@@ -132,13 +117,7 @@
                         <small class="loi-truong" id="loiMatKhau"></small>
                     </div>
 
-                    <div
-                        class="thong-bao"
-                        id="thongBao"
-                        role="status"
-                        aria-live="polite"
-                        hidden
-                    ></div>
+                    <div class="thong-bao" id="thongBao" role="status" aria-live="polite" hidden></div>
 
                     <button type="submit" class="nut-dang-nhap" id="nutDangNhap">
                         Đăng nhập
@@ -152,10 +131,7 @@
                     <span></span>
                 </div>
 
-                <a
-                    href="../dang-ky/dang-ky.html"
-                    class="nut-dang-ky"
-                >
+                <a href="../dang-ky/dang-ky.html" class="nut-dang-ky">
                     Tạo tài khoản mới
                 </a>
 
@@ -175,4 +151,5 @@
     <script src="../chung/chung.js"></script>
     <script src="dang-nhap.js"></script>
 </body>
+
 </html>

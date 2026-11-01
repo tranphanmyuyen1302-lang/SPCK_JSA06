@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="dang-ky.css">
     <link rel="stylesheet" href="../chung/chung.css">
 </head>
+
 <body>
     <header class="thanh-dau-trang">
         <a class="logo" href="../trang-chu/trang-chu.html">
@@ -30,17 +32,15 @@
             <form id="formDangKy" novalidate>
                 <div class="nhom-truong">
                     <label for="hoTen">Họ và tên</label>
-                    <input type="text" id="hoTen" name="hoTen"
-                        placeholder="Nhập họ và tên"
-                        autocomplete="name" maxlength="100" required>
+                    <input type="text" id="hoTen" name="hoTen" placeholder="Nhập họ và tên" autocomplete="name"
+                        maxlength="100" required>
                     <small class="loi-truong" id="loiHoTen"></small>
                 </div>
 
                 <div class="nhom-truong">
                     <label for="email">Địa chỉ email</label>
-                    <input type="email" id="email" name="email"
-                        placeholder="ban@example.com"
-                        autocomplete="email" maxlength="254" required>
+                    <input type="email" id="email" name="email" placeholder="ban@example.com" autocomplete="email"
+                        maxlength="254" required>
 
                     <small class="loi-truong" id="loiEmail"></small>
 
@@ -53,11 +53,10 @@
                 <div class="nhom-truong">
                     <label for="matKhau">Mật khẩu</label>
                     <div class="o-mat-khau">
-                        <input type="password" id="matKhau" name="matKhau"
-                            placeholder="Ít nhất 8 ký tự"
+                        <input type="password" id="matKhau" name="matKhau" placeholder="Ít nhất 8 ký tự"
                             autocomplete="new-password" required>
-                        <button class="nut-hien-mat-khau" type="button"
-                            data-target="matKhau" aria-pressed="false">Hiện</button>
+                        <button class="nut-hien-mat-khau" type="button" data-target="matKhau"
+                            aria-pressed="false">Hiện</button>
                     </div>
                     <small class="goi-y">
                         Tối thiểu 8 ký tự, gồm chữ hoa, chữ thường và chữ số.
@@ -68,19 +67,15 @@
                 <div class="nhom-truong">
                     <label for="xacNhanMatKhau">Xác nhận mật khẩu</label>
                     <div class="o-mat-khau">
-                        <input type="password" id="xacNhanMatKhau"
-                            name="xacNhanMatKhau"
-                            placeholder="Nhập lại mật khẩu"
+                        <input type="password" id="xacNhanMatKhau" name="xacNhanMatKhau" placeholder="Nhập lại mật khẩu"
                             autocomplete="new-password" required>
-                        <button class="nut-hien-mat-khau" type="button"
-                            data-target="xacNhanMatKhau"
+                        <button class="nut-hien-mat-khau" type="button" data-target="xacNhanMatKhau"
                             aria-pressed="false">Hiện</button>
                     </div>
                     <small class="loi-truong" id="loiXacNhan"></small>
                 </div>
 
-                <div id="thongBao" class="thong-bao"
-                    role="status" aria-live="polite" hidden></div>
+                <div id="thongBao" class="thong-bao" role="status" aria-live="polite" hidden></div>
 
                 <button class="nut-chinh" type="submit">
                     Tạo tài khoản <span aria-hidden="true">→</span>
@@ -104,4 +99,5 @@
     <script src="../chung/chung.js"></script>
     <script src="dang-ky.js"></script>
 </body>
+
 </html>

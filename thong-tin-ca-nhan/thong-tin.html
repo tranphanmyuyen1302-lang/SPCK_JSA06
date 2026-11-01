@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,69 +8,67 @@
     <link rel="stylesheet" href="../chung/chung.css">
     <link rel="stylesheet" href="thong-tin.css">
 </head>
+
 <body>
     <!--NAVBAR-->
     <header class="dau-trang">
-    <!-- LOGO -->
-    <a class="logo" href="../trang-chu/trang-chu.html">
-        Pass<span>It</span>
-    </a>
-    <nav class="menu">
-        <a href="../trang-chu/trang-chu.html" class="muc-dang-chon">
-            Trang chủ
+        <!-- LOGO -->
+        <a class="logo" href="../trang-chu/trang-chu.html">
+            Pass<span>It</span>
         </a>
+        <nav class="menu">
+            <a href="../trang-chu/trang-chu.html" class="muc-dang-chon">
+                Trang chủ
+            </a>
 
-        <a href="../danh-sach/danh-sach.html">
-            Khám phá
-        </a>
+            <a href="../danh-sach/danh-sach.html">
+                Khám phá
+            </a>
 
-        <a href="../dang-do/dang-do.html">
-            Đăng đồ
-        </a>
-    </nav>
+            <a href="../dang-do/dang-do.html">
+                Đăng đồ
+            </a>
+        </nav>
 
-    <!-- TAI KHOAN BEN PHAI -->
-     <div class="menu-tai-khoan">
+        <!-- TAI KHOAN BEN PHAI -->
+        <div class="menu-tai-khoan">
 
-    <button class="nut-tai-khoan" type="button">
-        <span>Tài khoản</span>
-        <span class="mui-ten">▽</span>
-    </button>
+            <button class="nut-tai-khoan" type="button">
+                <span>Tài khoản</span>
+                <span class="mui-ten">▽</span>
+            </button>
 
-    <!-- MENU THA XUONG -->
-    <div class="menu-tha-xuong">
+            <!-- MENU THA XUONG -->
+            <div class="menu-tha-xuong">
 
-        <div class="thong-tin-menu">
-            <div class="avatar-menu">♙</div>
+                <div class="thong-tin-menu">
+                    <div class="avatar-menu">♙</div>
 
-            <div class="chu-thong-tin">
-                <p class="tieu-de-menu">Tài khoản của tôi</p>
-                <span id="tenTrenMenu">Thành viên PassIt</span>
+                    <div class="chu-thong-tin">
+                        <p class="tieu-de-menu">Tài khoản của tôi</p>
+                        <span id="tenTrenMenu">Thành viên PassIt</span>
+                    </div>
+                </div>
+
+                <div class="duong-ke-menu"></div>
+
+                <a href="../thong-tin-ca-nhan/thong-tin.html" id="lienKetThongTin">
+                    Thông tin cá nhân
+                </a>
+
+                <a href="../san-pham-yeu-thich/yeu-thich.html" id="lienKetYeuThich">
+                    Sản phẩm yêu thích
+                </a>
+
+                <div class="duong-ke-menu"></div>
+
+                <button type="button" class="nut-dang-xuat" id="nutDangXuat">
+                    ↪ Đăng xuất
+                </button>
+
             </div>
-        </div>
 
-        <div class="duong-ke-menu"></div>
-
-        <a href="../thong-tin-ca-nhan/thong-tin.html" id="lienKetThongTin">
-            Thông tin cá nhân
-        </a>
-
-        <a href="../san-pham-yeu-thich/yeu-thich.html" id="lienKetYeuThich">
-            Sản phẩm yêu thích
-        </a>
-
-        <div class="duong-ke-menu"></div>
-
-        <button
-            type="button"
-            class="nut-dang-xuat"
-            id="nutDangXuat">
-            ↪ Đăng xuất
-        </button>
-
-    </div>
-
-</header>
+    </header>
 
     <main class="trang-ca-nhan">
         <div class="tieu-de-trang">
@@ -92,23 +91,12 @@
                 <div class="luoi-thong-tin">
                     <div class="truong-nhap">
                         <label for="hoTen">Họ và tên</label>
-                        <input
-                            type="text"
-                            id="hoTen"
-                            name="hoTen"
-                            placeholder="Nhập họ và tên"
-                            required
-                        >
+                        <input type="text" id="hoTen" name="hoTen" placeholder="Nhập họ và tên" required>
                     </div>
 
                     <div class="truong-nhap">
                         <label for="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            readonly
-                        >
+                        <input type="email" id="email" name="email" readonly>
                         <small>Email được dùng để xác định tài khoản.</small>
                     </div>
                 </div>
@@ -148,6 +136,12 @@
         </section>
     </main>
 
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top" aria-label="Lên đầu trang">
+        ↑
+    </button>
+
+
     <footer class="chan-trang">
         <a href="../trang-chu/trang-chu.html" class="logo">PassIt</a>
         <p>Trao đi món đồ cũ, tiếp nối giá trị mới.</p>
@@ -155,4 +149,5 @@
     <script src="../chung/chung.js"></script>
     <script src="thong-tin.js"></script>
 </body>
+
 </html>

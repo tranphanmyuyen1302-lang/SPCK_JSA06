@@ -623,3 +623,34 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.replace("../dang-nhap/dang-nhap.html");
     });
 });
+
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const backToTop = document.getElementById("backToTop");
+
+    if (!backToTop) return;
+
+    // Hiện nút khi cuộn xuống
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    });
+
+    // Cuộn mượt về đầu trang
+    backToTop.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+});
